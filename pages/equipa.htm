@@ -4,27 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipa</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        body.team-page {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(180deg, rgb(5, 18, 43) 0%, rgb(9, 31, 74) 50%, rgb(14, 46, 108) 100%);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .team-hero {
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(120deg, rgb(8, 35, 84) 0%, rgb(16, 64, 146) 100%);
+            border-bottom: 4px solid rgb(67, 137, 255);
+            box-shadow: 0 10px 30px rgba(2, 10, 30, 0.35);
+            padding: 28px 20px;
+        }
+
+        .team-hero h1 {
+            margin: 8px 0;
+            color: white;
+            font-size: 2.1rem;
+        }
+
+        .team-hero p {
+            margin: 0;
+            max-width: 840px;
+            line-height: 1.6;
+            color: rgb(225, 236, 255);
+            font-size: 1.05rem;
+        }
+
+        .team-kicker {
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            opacity: 0.8;
+            margin: 0;
+        }
+
+        .team-content {
+            width: min(980px, 92%);
+            margin: 28px auto 40px;
+        }
+
+        .team-content h2 {
+            color: white;
+            margin-bottom: 14px;
+        }
+
+        .team-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .filter-btn {
+            border: 1px solid rgb(123, 176, 255);
+            background: linear-gradient(135deg, rgb(25, 73, 161) 0%, rgb(43, 101, 204) 100%);
+            color: white;
+            border-radius: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: transform 180ms ease, filter 180ms ease;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg, rgb(76, 146, 255) 0%, rgb(123, 176, 255) 100%);
+            color: rgb(7, 25, 58);
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 14px;
+        }
+
+        .member-card {
+            background: linear-gradient(140deg, rgb(14, 41, 92) 0%, rgb(18, 56, 126) 100%);
+            border: 1px solid rgb(72, 130, 235);
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 0 8px 20px rgba(1, 8, 24, 0.35);
+            transition: transform 220ms ease, box-shadow 220ms ease;
+            animation: card-rise 500ms ease-out both;
+        }
+
+        .member-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 26px rgba(2, 10, 30, 0.5);
+        }
+
+        .member-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgb(36, 91, 190) 0%, rgb(76, 146, 255) 100%);
+            color: white;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .member-card h3 {
+            margin: 0 0 8px;
+            color: white;
+        }
+
+        .member-card p {
+            margin: 4px 0;
+            color: rgb(223, 236, 255);
+            font-size: 0.98rem;
+        }
+
+        .member-actions {
+            margin-top: 10px;
+        }
+
+        .member-details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(8, 24, 56, 0.55);
+            border-left: 3px solid rgb(123, 176, 255);
+        }
+
+        .member-details.open {
+            display: block;
+        }
+
+        .member-card.is-hidden {
+            display: none;
+        }
+
+        @keyframes card-rise {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 680px) {
+            .team-hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .member-card {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
-<body>
-    <header>
+<body class="team-page">
+    <header class="team-hero">
+        <p class="team-kicker">Nossa Equipa</p>
         <h1>Equipa</h1>
-        <br>
-        <h3>Membros</h3>
-        <img src="" alt="">
-        <h4><b>Nome:</b>Ádrian Falcão</h4>
-        <p><b>Idade:</b>27 anos.</p>
-        <p><b>Formação Anterior:</b> Direito</p>
-        <br>
-        <img src="" alt="">
-        <h4><b>Nome:</b>Ana Novo</h4>
-        <p><b>Idade:</b>20 anos.</p>
-        <p><b>Formação Anterior:</b> Multimédia</p>
-        <br>
-        <img src="" alt="">
-        <h4><b>Nome:</b>Henrique Cruz</h4>
-        <p><b>Idade:</b>30 anos.</p>
-        <p><b>Formação Anterior:</b> Enfermagem</p>
+        <p>Conheca os membros da nossa equipa, cada um trazendo habilidades e experiencias unicas para o projeto.</p>
     </header>
+
+    <main class="team-content">
+        <h2>Membros</h2>
+        <div class="team-filters">
+            <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+            <button class="filter-btn" type="button" data-filter="direito">Direito</button>
+            <button class="filter-btn" type="button" data-filter="multimedia">Multimedia</button>
+            <button class="filter-btn" type="button" data-filter="enfermagem">Enfermagem</button>
+        </div>
+        <section class="members-grid">
+            <article class="member-card" data-area="direito">
+                <div class="member-avatar">AF</div>
+                <h3>Adrian Falcao</h3>
+                <p><strong>Idade:</strong> 27 anos</p>
+                <p><strong>Formacao Anterior:</strong> Direito</p>
+                <div class="member-actions">
+                    <button class="filter-btn" type="button" data-member-toggle="adrian">Ver perfil</button>
+                </div>
+                <div class="member-details" id="adrian">
+                    <p>Interesses: logica, estrutura de conteudo e organizacao de produto digital.</p>
+                </div>
+            </article>
+
+            <article class="member-card" data-area="multimedia">
+                <div class="member-avatar">AN</div>
+                <h3>Ana Novo</h3>
+                <p><strong>Idade:</strong> 20 anos</p>
+                <p><strong>Formacao Anterior:</strong> Multimedia</p>
+                <div class="member-actions">
+                    <button class="filter-btn" type="button" data-member-toggle="ana">Ver perfil</button>
+                </div>
+                <div class="member-details" id="ana">
+                    <p>Interesses: design visual, composicao grafica e experiencia de utilizador.</p>
+                </div>
+            </article>
+
+            <article class="member-card" data-area="enfermagem">
+                <div class="member-avatar">HC</div>
+                <h3>Henrique Cruz</h3>
+                <p><strong>Idade:</strong> 30 anos</p>
+                <p><strong>Formacao Anterior:</strong> Enfermagem</p>
+                <div class="member-actions">
+                    <button class="filter-btn" type="button" data-member-toggle="henrique">Ver perfil</button>
+                </div>
+                <div class="member-details" id="henrique">
+                    <p>Interesses: resolucao de problemas, usabilidade e detalhe na execucao tecnica.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const filterButtons = document.querySelectorAll("[data-filter]");
+        const memberCards = document.querySelectorAll(".member-card");
+
+        filterButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const filter = button.getAttribute("data-filter");
+
+                filterButtons.forEach((item) => item.classList.remove("active"));
+                button.classList.add("active");
+
+                memberCards.forEach((card) => {
+                    const area = card.getAttribute("data-area");
+                    const visible = filter === "all" || filter === area;
+                    card.classList.toggle("is-hidden", !visible);
+                });
+            });
+        });
+
+        const memberToggleButtons = document.querySelectorAll("[data-member-toggle]");
+        memberToggleButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const targetId = button.getAttribute("data-member-toggle");
+                const details = document.getElementById(targetId);
+                if (!details) {
+                    return;
+                }
+                const isOpen = details.classList.toggle("open");
+                button.textContent = isOpen ? "Ocultar perfil" : "Ver perfil";
+            });
+        });
+    </script>
 </body>
 </html>
