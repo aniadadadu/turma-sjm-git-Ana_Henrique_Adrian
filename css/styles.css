@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(238, 244, 238);
+    background-color:rgb(238, 244, 251);
     margin:0;
 }
 
@@ -9,7 +9,7 @@ main{
 
 p{
     font-size:20px;
-    color:rgb(34, 57, 51);
+    color:rgb(31, 58, 90);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -17,8 +17,8 @@ header{
     padding:20px;
     align-self: left;
     margin:auto;
-    background:linear-gradient(120deg, rgb(196, 220, 172) 0%, rgb(164, 198, 137) 100%);
-    color:rgb(28, 56, 49);
+    background:linear-gradient(120deg, rgb(207, 227, 248) 0%, rgb(159, 196, 234) 100%);
+    color:rgb(23, 49, 77);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:30px;
 }
