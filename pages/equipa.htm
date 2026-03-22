@@ -100,6 +100,22 @@
             animation: card-rise 500ms ease-out both;
         }
 
+        .member-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .member-summary p {
+            margin: 3px 0;
+            font-size: 0.95rem;
+        }
+
+        .member-header .member-avatar {
+            margin-bottom: 0;
+        }
+
         .member-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 14px 26px rgba(40, 72, 104, 0.24);
@@ -115,6 +131,14 @@
             place-items: center;
             font-weight: 700;
             margin-bottom: 10px;
+        }
+
+        .member-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
         }
 
         .member-card h3 {
@@ -169,6 +193,10 @@
             .member-card {
                 padding: 15px;
             }
+
+            .member-header {
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
@@ -193,10 +221,16 @@
         </div>
         <section class="members-grid">
             <article class="member-card" data-area="direito">
-                <div class="member-avatar">AF</div>
-                <h3>Ádrian Falcão</h3>
-                <p><strong>Idade:</strong> 27 anos</p>
-                <p><strong>Formação Anterior:</strong> Direito</p>
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="../galeria/Avatars/Adrian.png" alt="Foto de Ádrian Falcão">
+                    </div>
+                    <div class="member-summary">
+                        <h3>Ádrian Falcão</h3>
+                        <p><strong>Idade:</strong> 27 anos</p>
+                        <p><strong>Formação Anterior:</strong> Direito</p>
+                    </div>
+                </div>
                 <div class="member-actions">
                     <button class="filter-btn" type="button" data-member-toggle="adrian">Ver perfil</button>
                 </div>
@@ -206,10 +240,14 @@
             </article>
 
             <article class="member-card" data-area="multimedia">
-                <div class="member-avatar">AN</div>
-                <h3>Ana Novo</h3>
-                <p><strong>Idade:</strong> 20 anos</p>
-                <p><strong>Formação Anterior:</strong> Multimedia</p>
+                <div class="member-header">
+                    <div class="member-avatar">AN</div>
+                    <div class="member-summary">
+                        <h3>Ana Novo</h3>
+                        <p><strong>Idade:</strong> 20 anos</p>
+                        <p><strong>Formação Anterior:</strong> Multimedia</p>
+                    </div>
+                </div>
                 <div class="member-actions">
                     <button class="filter-btn" type="button" data-member-toggle="ana">Ver perfil</button>
                 </div>
@@ -219,10 +257,14 @@
             </article>
 
             <article class="member-card" data-area="enfermagem">
-                <div class="member-avatar">HC</div>
-                <h3>Henrique Cruz</h3>
-                <p><strong>Idade:</strong> 30 anos</p>
-                <p><strong>Formação Anterior:</strong> Enfermagem</p>
+                <div class="member-header">
+                    <div class="member-avatar">HC</div>
+                    <div class="member-summary">
+                        <h3>Henrique Cruz</h3>
+                        <p><strong>Idade:</strong> 30 anos</p>
+                        <p><strong>Formação Anterior:</strong> Enfermagem</p>
+                    </div>
+                </div>
                 <div class="member-actions">
                     <button class="filter-btn" type="button" data-member-toggle="henrique">Ver perfil</button>
                 </div>
