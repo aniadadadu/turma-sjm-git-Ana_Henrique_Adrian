@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/projetos.css">
+</head>
+<body class="projects-page has-fixed-layout">
+    <nav class="site-menu" aria-label="Menu principal">
+        <iframe src="layout.html?section=menu&page=projetos" title="Menu principal"></iframe>
+    </nav>
+
+    <header class="projects-hero">
+        <p class="projects-kicker">Portefolio da Turma</p>
+        <h1>Projetos</h1>
+        <p>
+            Aqui estão os projetos que desenvolvemos ao longo do semestre. Cada trabalho foi pensado
+            para aplicar os conhecimentos das aulas e fortalecer a prática em programação, design e
+            desenvolvimento web.
+        </p>
+    </header>
+
+    <main class="projects-content">
+        <section class="project-card">
+            <h2>Projeto 1: Jogo em Python</h2>
+            <div class="project-media">Escape Room Interativo</div>
+            <p>
+                Desenvolvemos um jogo em Python para o projeto final da disciplina de Inglês. A proposta
+                foi criar um escape room para jogar com os colegas no último dia da UC.
+            </p>
+            <div class="project-actions">
+                <button class="action-btn" type="button" data-toggle="extra-jogo">Ver detalhes</button>
+            </div>
+            <div class="project-extra" id="extra-jogo">
+                <p>Próximos passos: incluir ranking, sistema de pistas e cronometro com pontuação.</p>
+            </div>
+            <div class="carousel-slot" data-carousel>
+                <p class="carousel-title">Espaço reservado para carousel do projeto</p>
+                <div class="carousel-track">
+                    <div class="carousel-item active">
+                        <div class="carousel-frame">
+                            <div>
+                                <p class="carousel-frame-title"><img src="/galeria/Escape_Room_Inicio.png" alt="Início do Jogo no Terminal" width="100%"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-frame">
+                            <div>
+                                <p class="carousel-frame-title"><img src="/galeria/Parte_do_Jogo.png" alt="Parte do Jogo" width="100%"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-frame">
+                            <div>
+                                <p class="carousel-frame-title"><img src="/galeria/Fim_de_Jogo.gif" alt="Fim do Jogo" width="100%"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="action-btn" type="button" data-carousel-prev>Anterior</button>
+                    <p class="carousel-index">1 / 3</p>
+                    <button class="action-btn" type="button" data-carousel-next>Proximo</button>
+                </div>
+            </div>
+            <p class="project-tag">Python | Lógica de Jogo | Trabalho em Equipa</p>
+        </section>
+
+        <section class="project-card reveal">
+            <h2>Projeto 2: Desenvolvimento Frontend</h2>
+            <div class="project-media">Interfaces Individuais em HTML, CSS e JavaScript</div>
+            <div class="members-grid">
+                <p>Elaborado por: Ádrian Falcão</p>
+                <p>Elaborado por: Ana Novo</p>
+                <p>Elaborado por: Henrique Cruz</p>
+            </div>
+            <p>
+                Cada membro está a construir uma interface web com foco em usabilidade e identidade
+                visual, incluindo as funcionalidades solicitadas pelo professor na UC de Frontend.
+            </p>
+            <div class="project-actions">
+                <button class="action-btn" type="button" data-toggle="extra-frontend">Ver detalhes</button>
+            </div>
+            <div class="project-extra" id="extra-frontend">
+                <p>Próximos passos: adicionar menu responsivo, formularios validados e modo acessivel.</p>
+            </div>
+            <div class="carousel-slot" data-carousel>
+                <p class="carousel-title">Espaço reservado para carousel do projeto</p>
+                <div class="carousel-track">
+                    <div class="carousel-item active">
+                        <div class="carousel-frame">
+                            <div>
+                                <p class="carousel-frame-title">Imagem 1 - Home da Interface</p>
+                                <p class="carousel-frame-meta">Formato recomendado: 1280 x 720</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-frame">
+                            <div>
+                                <p class="carousel-frame-title">Imagem 2 - Funcionalidades</p>
+                                <p class="carousel-frame-meta">Formato recomendado: 1280 x 720</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-frame">
+                            <div>
+                                <p class="carousel-frame-title">Imagem 3 - Versao Mobile</p>
+                                <p class="carousel-frame-meta">Formato recomendado: 1280 x 720</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="action-btn" type="button" data-carousel-prev>Anterior</button>
+                    <p class="carousel-index">1 / 3</p>
+                    <button class="action-btn" type="button" data-carousel-next>Proximo</button>
+                </div>
+            </div>
+            <p class="project-tag">HTML | CSS | JavaScript</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <iframe src="layout.html?section=footer" title="Rodape"></iframe>
+    </footer>
+
+<script src="../js/projetos.js"></script>
+</body>
+</html>
