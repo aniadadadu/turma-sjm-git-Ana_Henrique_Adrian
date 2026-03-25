@@ -39,8 +39,7 @@ p{
 
 header{
     padding:20px;
-    align-self: left;
-    margin:auto;
+    align-self: flex-start;
     background:linear-gradient(120deg, rgb(207, 227, 248) 0%, rgb(159, 196, 234) 100%);
     color:var(--black);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -72,16 +71,20 @@ footer {
     color: var(--black);
     border-top: 1px solid #acacac;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:15px;
     background-color:#e3e3e3;
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------*/
 /*hero*/
 
 .hero {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
     text-align: center;
+    justify-content:center;
     max-width: 700px;
     width: 100%;
+    gap:60px;
 }
  
 .hero-title {
@@ -99,7 +102,7 @@ footer {
 }
  
 .hero-subtitle {
-    font-size: clamp(2rem, 3vw, 1.25rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: 300;
     color: var(--grey);
     margin-bottom: 48px;
@@ -135,18 +138,6 @@ footer {
 .btn-primary:hover {
     background-color: var(--darkcyan);
     transform: translateY(-2px);
-}
-
-
-footer {
-    text-align: center;
-    padding: 24px 20px;
-    font-size: 0.85rem;
-    color: var(--black);
-    border-top: 1px solid #acacac;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:15px;
-    background-color:#e3e3e3;
 }
 
 a{
@@ -212,16 +203,22 @@ a{
     height: 50%;
 }
 
-@media screen and (max-width: 600px) {
-    
-    .MAIN{
-        flex-direction:column;
+@media (max-width: 600px) {
+    .hero {
+     flex-direction: column;   /* stacks on mobile */
         align-items: center;
-        text-align:Center;
+        text-align: center;
     }
 
-    .button-group, #maintitle{
-        flex-direction:column;
-        width:100%;
+    #maintitle{
+        font-size:3.5rem;
+    }
+
+    .hero-subtitle{
+        font-size: 1.5rem;
+    }
+
+    .button-group{
+        flex-direction: column;
     }
 }
