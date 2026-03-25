@@ -96,6 +96,7 @@ main {
 }
 
 
+
 footer {
     text-align: center;
     padding: 24px 20px;
@@ -103,3 +104,60 @@ footer {
     color: rgb(0, 0, 0);
     border-top: 1px solid #acacac;
 }
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*PÁGINA DOS CONTACTOS*/
+
+.caixaCorpo{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.caixaContacto {
+    background-color: darkgrey;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+
+.primeiroNome{
+    display: flex;
+    flex-direction: row;
+    margin: 10pgitx;
+    align-items: center;
+}
+
+.ultimoNome{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.morada{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.mensagem{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
