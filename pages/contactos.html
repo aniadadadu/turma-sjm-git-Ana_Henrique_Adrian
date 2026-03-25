@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contactos</title>
 </head>
 <link rel="stylesheet" href="styles.css">
 
     <header> Tech SJM 2026</header>
    <div class = "caixaCorpo">
+
         <div class="caixaContacto">
             <h1>Contactos</h1>
             <div class="primeiroNome">
@@ -18,25 +18,35 @@
 
             <div class="ultimoNome">
                 <label for="ultimoNome">Último Nome:</label>
-                <input type="text" id="ultimoNome" name="ultimoNome" size="40%">
+                <input type="text" id="ultimoNome" name="ultimoNome">
             </div>
 
             <div class="morada">
                 <label for="morada"> Morada:</label>
-                <input type="text" id="morada" name="morada" size="70%">
+                <input type="text" id="morada" name="morada">
             </div>
 
             <div class="email">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" size="70%">
+                <input type="email" id="email" name="email">
             </div>
 
             <div class="mensagem">
                 <label for="mensagem">Mensagem:</label>
-                <input type="text" id="mensagem" name="mensagem" size="40%">
+                <textarea id="mensagem" placeholder="Introduza aqui a sua mensagem" name="mensagem"></textarea>
+            </div>
+
+            <div id="mensagemStatus"> </div>
+
+            <div class="botao">
+                <button id="btnSubmit" class="btn-submit">Enviar</button>
             </div>
         </div>
    </div>
-    
+    <footer class="site-footer">
+        <iframe src="layout.html?section=footer" title="Rodape"></iframe>
+    </footer>
+   <script src="../js/contactos.js"></script>
+
 </body>
 </html>
