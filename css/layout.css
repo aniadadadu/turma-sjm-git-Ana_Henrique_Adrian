@@ -53,3 +53,90 @@ body.has-fixed-layout {
         height: 108px;
     }
 }
+
+body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .menu-view {
+            display: none;
+            height: 74px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            align-items: center;
+            gap: 18px;
+            padding: 14px 20px;
+            background: linear-gradient(120deg, rgb(23, 50, 79) 0%, rgb(34, 77, 121) 100%);
+            border-bottom: 1px solid rgba(171, 201, 234, 0.55);
+            color: rgb(237, 245, 255);
+        }
+
+        .site-brand {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+
+        .site-menu-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .site-menu-links a {
+            color: rgb(237, 245, 255);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 700;
+            border: 1px solid rgba(206, 224, 245, 0.7);
+            border-radius: 999px;
+            padding: 7px 12px;
+            transition: filter 180ms ease, transform 180ms ease;
+        }
+
+        .site-menu-links a:hover {
+            filter: brightness(1.12);
+            transform: translateY(-1px);
+        }
+
+        .site-menu-links a[aria-current="page"] {
+            background: linear-gradient(135deg, rgb(184, 216, 246) 0%, rgb(139, 185, 232) 100%);
+            color: rgb(21, 50, 80);
+            border-color: rgb(126, 171, 218);
+        }
+
+        .footer-view {
+            display: none;
+            height: 64px;
+            box-sizing: border-box;
+            place-items: center;
+            background: linear-gradient(120deg, rgb(23, 50, 79) 0%, rgb(34, 77, 121) 100%);
+            border-top: 1px solid rgba(171, 201, 234, 0.55);
+            color: rgb(226, 239, 253);
+            font-size: 0.9rem;
+            padding: 12px 14px;
+        }
+
+        .footer-view p {
+            margin: 0;
+        }
+
+        @media (max-width: 680px) {
+            .menu-view {
+                height: 108px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+                padding: 12px 14px;
+            }
+
+            .site-brand {
+                font-size: 0.98rem;
+            }
+
+            .site-menu-links {
+                width: 100%;
+            }
+        }
