@@ -1,3 +1,16 @@
+/*animação fade-in*/
+
+@keyframes fadein {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
 /*catalogo cores*/
 :root{
 --cyan: #4ebcc4;
@@ -30,6 +43,7 @@ header{
     background-color:var(--cyan);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:30px;
+    
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------*
@@ -39,8 +53,6 @@ header{
     font-size:6rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:var(--black);
-    
-
 }
 
 main {
@@ -49,6 +61,7 @@ main {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
+    animation: 0.7s fadein;
 }
  
 footer {
