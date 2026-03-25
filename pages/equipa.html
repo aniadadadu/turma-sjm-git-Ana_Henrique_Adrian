@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipa</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/equipa.css">
+</head>
+<body class="team-page has-fixed-layout">
+    <nav class="site-menu" aria-label="Menu principal">
+        <iframe src="layout.html?section=menu&page=equipa" title="Menu principal"></iframe>
+    </nav>
+
+    <header class="team-hero">
+        <p class="team-kicker">Nossa Equipa</p>
+        <h1>Equipa</h1>
+        <p>Conheça os membros da nossa equipa, cada um trazendo habilidades e experiencias únicas para o projeto.</p>
+    </header>
+
+    <main class="team-content">
+        <h2>Membros</h2>
+        <div class="team-filters">
+            <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+            <button class="filter-btn" type="button" data-filter="direito">Direito</button>
+            <button class="filter-btn" type="button" data-filter="multimedia">Multimedia</button>
+            <button class="filter-btn" type="button" data-filter="enfermagem">Enfermagem</button>
+        </div>
+        <section class="members-grid">
+            <article class="member-card" data-area="direito">
+                <div class="member-header">
+                    <div class="member-avatar">
+                        <img src="../galeria/Avatars/Adrian.png" alt="Foto de Ádrian Falcão">
+                    </div>
+                    <div class="member-summary">
+                        <h3>Ádrian Falcão</h3>
+                        <p><strong>Idade:</strong> 27 anos</p>
+                        <p><strong>Formação Anterior:</strong> Direito</p>
+                    </div>
+                </div>
+                <div class="member-actions">
+                    <button class="filter-btn" type="button" data-member-toggle="adrian">Ver perfil</button>
+                </div>
+                <div class="member-details" id="adrian">
+                    <p>Interesses: lógica, estrutura de conteudo e organização de produto digital.</p>
+                </div>
+            </article>
+
+            <article class="member-card" data-area="multimedia">
+                <div class="member-header">
+                    <div class="member-avatar">AN</div>
+                    <div class="member-summary">
+                        <h3>Ana Novo</h3>
+                        <p><strong>Idade:</strong> 20 anos</p>
+                        <p><strong>Formação Anterior:</strong> Multimedia</p>
+                    </div>
+                </div>
+                <div class="member-actions">
+                    <button class="filter-btn" type="button" data-member-toggle="ana">Ver perfil</button>
+                </div>
+                <div class="member-details" id="ana">
+                    <p>Interesses: design visual, composição gráfica e experiência de utilizador.</p>
+                </div>
+            </article>
+
+            <article class="member-card" data-area="enfermagem">
+                <div class="member-header">
+                    <div class="member-avatar">HC</div>
+                    <div class="member-summary">
+                        <h3>Henrique Cruz</h3>
+                        <p><strong>Idade:</strong> 30 anos</p>
+                        <p><strong>Formação Anterior:</strong> Enfermagem</p>
+                    </div>
+                </div>
+                <div class="member-actions">
+                    <button class="filter-btn" type="button" data-member-toggle="henrique">Ver perfil</button>
+                </div>
+                <div class="member-details" id="henrique">
+                    <p>Interesses: resolucao de problemas, usabilidade e detalhe na execução técnica.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <iframe src="layout.html?section=footer" title="Rodape"></iframe>
+    </footer>
+
+<script src="../js/equipa.js"></script>
+</body>
+</html>
