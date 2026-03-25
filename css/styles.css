@@ -1,15 +1,16 @@
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*elementos html*/
 body{
-    background-color:rgb(238, 244, 251);
-    margin:0;
-}
-
-main{
-    padding:15px;
+    background-color:var(--white);
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 p{
     font-size:20px;
-    color:rgb(31, 58, 90);
+    color:var(--black);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -18,7 +19,153 @@ header{
     align-self: left;
     margin:auto;
     background:linear-gradient(120deg, rgb(207, 227, 248) 0%, rgb(159, 196, 234) 100%);
-    color:rgb(23, 49, 77);
+    color:var(--black);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:30px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*
+/*titulo principal*/
+
+#maintitle {
+    font-size:6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:var(--black);
+    
+
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+ 
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.85rem;
+    color: var(--black);
+    border-top: 1px solid #acacac;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    background-color:#e3e3e3;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*hero*/
+
+.hero {
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+ 
+.hero-title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--black);
+    margin-bottom: 16px;
+}
+ 
+.hero-title span {
+    color: var(--cyan);
+}
+ 
+.hero-subtitle {
+    font-size: clamp(2rem, 3vw, 1.25rem);
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/* BOTOES */
+.button-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+}
+ 
+.btn-primary {
+    background-color: var(--cyan);
+    color: var(--black);
+}
+ 
+.btn-primary:hover {
+    background-color: var(--darkcyan);
+    transform: translateY(-2px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.85rem;
+    color: var(--black);
+    border-top: 1px solid #acacac;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    background-color:#e3e3e3;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*PÁGINA DOS CONTACTOS*/
+
+.caixaCorpo{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.caixaContacto {
+    background-color: darkgrey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.primeiroNome, .ultimoNome, .morada, .email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+}
+
+#primeiroNome label, #ultimoNome label, #morada label, #email label{
+    width: 80vh;
+}
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
 }
