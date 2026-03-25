@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contactos</title>
 </head>
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/contactos.css">
 <body>
-    <header> Tech SJM 2026</header>
+    <header> Tech SJM 2026</header> 
+    
    <div class = "caixaCorpo">
         <div class="caixaContacto">
-            <h1>Contactos</h1>
+            <div class="titulo"> <h1>Contactos</h1> </div>
             <div class="primeiroNome">
                 <label for="primeiroNome">Primeiro Nome:</label>
                 <input type="text" id="primeiroNome" name="primeiroNome">
@@ -36,11 +36,15 @@
                 <textarea id="mensagem" placeholder="Introduza aqui a sua mensagem" name="mensagem"></textarea>
             </div>
 
+            <div id="mensagemStatus"> </div>
+
             <div class="botao">
-                <button class="btn-submit">Enviar</button>
+                <button id="btnSubmit" class="btn-submit">Enviar</button>
             </div>
         </div>
    </div>
-    
+
+   <script src="../js/contactos.js"></script>
+
 </body>
 </html>

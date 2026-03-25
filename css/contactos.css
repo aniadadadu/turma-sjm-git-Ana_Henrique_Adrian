@@ -1,0 +1,234 @@
+/*catalogo cores*/
+:root{
+--cyan: #4ebcc4;
+--darkcyan:#008b8b;
+--black: #000000;
+--white: #FFFFFF;
+--grey:#272727;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*elementos html*/
+body{
+    background-color:var(--white);
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+p{
+    font-size:20px;
+    color:var(--black);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display:flex;
+    flex-direction:column;
+    padding: 20px 40px;
+    background-color:var(--cyan);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*
+/*titulo principal*/
+
+#maintitle {
+    font-size:6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:var(--black);
+    
+
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+ 
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.85rem;
+    color: var(--black);
+    border-top: 1px solid #acacac;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    background-color:#e3e3e3;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*hero*/
+
+.hero {
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+ 
+.hero-title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--black);
+    margin-bottom: 16px;
+}
+ 
+.hero-title span {
+    color: var(--cyan);
+}
+ 
+.hero-subtitle {
+    font-size: clamp(2rem, 3vw, 1.25rem);
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/* BOTOES */
+.button-group {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.3px;
+}
+ 
+.btn-primary {
+    background-color: var(--cyan);
+    color: var(--black);
+}
+ 
+.btn-primary:hover {
+    background-color: var(--darkcyan);
+    transform: translateY(-2px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.85rem;
+    color: var(--black);
+    border-top: 1px solid #acacac;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:15px;
+    background-color:#e3e3e3;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*PÁGINA DOS CONTACTOS*/
+
+.caixaCorpo{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.caixaContacto {
+    background-color: darkgrey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primeiroNome, .ultimoNome,  .morada,  .email, .mensagem, .botao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.primeiroNome label, .ultimoNome label, .morada label, .email label, .mensagem label {
+    width: 30%;
+    text-align: right;
+}
+
+/* Inputs ocupam o resto */
+.primeiroNome input, .ultimoNome input,.morada input, .email input {
+    width: 60%;
+    margin-bottom: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    height: 2vh;
+}
+
+#mensagem textarea{
+    height: 20vh;
+    min-width: 60%;
+    max-width: none;
+}
+
+.botao{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-submit {
+    background-color: var(--cyan);
+    color: var(--black);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.btn-submit:hover {
+    background-color: var(--darkcyan);
+    transform: translateY(-2px);
+}
+
+#mensagemStatus {
+    align-self: center;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    display: none;
+    font-weight: bold;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
